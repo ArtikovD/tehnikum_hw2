@@ -1,22 +1,36 @@
-print("Ноль в качестве знака операции"
-      "\nзавершит работу программы")
+print ('''
+Привет! 
+
+Приглашаем тебя на школьный калькулятор''')
+print('Я помогу тебе сделать твою домашку по математике :p')
+print('''
+Если ты нажмешь на Ноль, то ты завершишь калькулятор, 
+
+Ну что погнали ?! 
+''')
 while True:
-    s = input("Знак (0,+,-,*,/): ")
-    if s == '0':
+    znak = input('Выбери знак: +, -, *, /:   ')
+
+    print ('теперь введи четыре цифры: ')
+
+    if znak == '0':
         break
-    if s in ('0','+', '-', '*', '/'):
-        x = float(input("x="))
-        y = float(input("y="))
-        if s == '+':
-            print("%.2f" % (x+y))
-        elif s == '-':
-            print("%.2f" % (x-y))
-        elif s == '*':
-            print("%.2f" % (x*y))
-        elif s == '/':
-            if y != 0:
-                print("%.2f" % (x/y))
-            else:
-                print("Деление на ноль!")
-    else:
-        print("Неверный знак операции!")
+    if znak in ('+', '-', '*', '/'):
+        a= float(input('x= '))
+        b= float(input('y= '))
+        c= float(input('y= '))
+        d= float(input('z= '))
+    if znak == '+':
+            print('Поздравляю, твой ответ: ')
+            print(a+b+c+d)
+    elif znak in ('-'):
+        print(+ a-b-c-d)
+    elif znak in ('*'):
+        print (a*b*c*d)
+    elif znak in ('/'):
+        print (a/b/c/d)
+    ans_3 = '1'
+    print ('Продолжаем? Елси НЕТ то жми на 0')
+    if znak=='0':
+            print ('''На ноль делить нельзя!, 
+            введи другое чилсо!''')

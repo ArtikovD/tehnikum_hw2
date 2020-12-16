@@ -24,13 +24,18 @@ while True:
             print('Поздравляю, твой ответ: ')
             print(a+b+c+d)
     elif znak in ('-'):
+        print('Поздравляю, твой ответ: ')
         print(+ a-b-c-d)
     elif znak in ('*'):
+        print('Поздравляю, твой ответ: ')
         print (a*b*c*d)
     elif znak in ('/'):
+        print('Поздравляю, твой ответ: ')
         print (a/b/c/d)
     ans_3 = '1'
     print ('Продолжаем? Елси НЕТ то жми на 0')
     if znak=='0':
             print ('''На ноль делить нельзя!, 
             введи другое чилсо!''')
+
+

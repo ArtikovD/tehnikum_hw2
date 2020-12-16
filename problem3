@@ -31,15 +31,13 @@ while True:
         print (a*b*c*d)
     elif znak in ('/'):
         print('Поздравляю, твой ответ: ')
-        print (a/b/c/d)
         if znak != 0:
-            print ('Поздравляю, твой ответ: ')
-           print (a/b/c/d)
+            print (a/b/c/d)
         else:
             print('''На ноль делить нельзя!, 
             введи другое чилсо!''')
 
     print ('Продолжаем? Елси НЕТ то жми на 0')
- 
+
 
 
